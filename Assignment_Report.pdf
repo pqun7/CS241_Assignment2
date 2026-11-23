@@ -1,0 +1,140 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 2572 >>
+stream
+BT
+/F1 9 Tf
+50 750 Td
+(CS241 - Assignment 2: Cloud-Cluster CPU Scheduling) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(Algorithms) Tj
+0 -13 Td
+(Preemptive SJF \(SRTF\) always selects the arrived process with the shortest remaining time.) Tj
+0 -13 Td
+(ACS uses Tier 1 round robin, Tier 2 non-preemptive priority scheduling, and aging.) Tj
+0 -13 Td
+(Tier 1 processes use Q=3. Aging interval is 4 time units.) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(Scheduling assumptions) Tj
+0 -13 Td
+(A context switch consumes simulated CPU time and is charged only when changing processes.) Tj
+0 -13 Td
+(The initial dispatch after idle does not incur a context switch. Arrivals during a switch are admitted.) Tj
+0 -13 Td
+(Tier 2 is non-preemptive: a running Tier 2 process completes before another choice is made.) Tj
+0 -13 Td
+(Effective priority = max\(0, initial priority - floor\(Tier 2 waiting / aging interval\)\).) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(Required test case results) Tj
+0 -13 Td
+(Algorithm: Preemptive SJF \(SRTF\)) Tj
+0 -13 Td
+(Average waiting: 4.00   Average turnaround: 9.00) Tj
+0 -13 Td
+(Average response: 4.00) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(Algorithm: Adaptive Container Scheduler) Tj
+0 -13 Td
+(Average waiting: 11.00   Average turnaround: 16.00) Tj
+0 -13 Td
+(Average response: 2.33) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(Per-process ACS metrics) Tj
+0 -13 Td
+(Process   Finish   Turnaround   Waiting   Response) Tj
+0 -13 Td
+(P1        18       18           13        0) Tj
+0 -13 Td
+(P2        15       14           8         3) Tj
+0 -13 Td
+(P3        20       16           12        4) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(ACS timeline:) Tj
+0 -13 Td
+(P1 P1 P1 CS P2 P2 P2 CS P3 P3 P3 CS P2 P2 P2 CS P1 P1 CS P3) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(SJF timeline:) Tj
+0 -13 Td
+(P1 P1 P1 P1 P1 CS P3 P3 P3 P3 CS P2 P2 P2 P2 P2 P2) Tj
+0 -13 Td
+() Tj
+0 -13 Td
+(Experimental graphs \(each # is approximately one time unit\)) Tj
+0 -13 Td
+(Context switch vs average waiting time:) Tj
+0 -13 Td
+(CS=0 6.17 ######) Tj
+0 -13 Td
+(CS=1 9.33 #########) Tj
+0 -13 Td
+(CS=2 12.50 #############) Tj
+0 -13 Td
+(Quantum vs average waiting time:) Tj
+0 -13 Td
+(Q=2 10.00 ##########) Tj
+0 -13 Td
+(Q=3 11.00 ###########) Tj
+0 -13 Td
+(Q=4 10.00 ##########) Tj
+0 -13 Td
+(Q=5 6.33 ######) Tj
+0 -13 Td
+(Context switch vs average turnaround time:) Tj
+0 -13 Td
+(CS=0 11.17 ###########) Tj
+0 -13 Td
+(CS=1 14.33 ##############) Tj
+0 -13 Td
+(CS=2 17.50 ##################) Tj
+0 -13 Td
+(Quantum vs average turnaround time:) Tj
+0 -13 Td
+(Q=2 15.00 ###############) Tj
+0 -13 Td
+(Q=3 16.00 ################) Tj
+0 -13 Td
+(Q=4 15.00 ###############) Tj
+0 -13 Td
+ET
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2934
+%%EOF
